@@ -18,10 +18,11 @@
 
 	<nav class="MenuNavegacio">
 		<img src="Pictures/logoipsum.webp" alt="Logo">
-		<a href="index.html">Latest recipes</a>
-		<a href="index.html">Most popular recipes</a>
-		<a href="index.html">Categories</a>
-		<img src="Pictures/imatgePerfilNavegacio.webp" alt="Foto de Perfil" class="FotoPerfilNavegacio">
+		<a href="index.html" class="Visibilitat">Latest recipes</a>
+		<a href="index.html" class="Visibilitat">Most popular recipes</a>
+		<a href="index.html" class="Visibilitat">Categories</a>
+		<img src="Pictures/imatgePerfilNavegacio.webp" alt="Foto de Perfil" class="FotoPerfilNavegacio Visibilitat">
+		<img src="Pictures/botoMenu.webp" alt="Boto menu desplegable" class="BotoMenuDesplegable">
 	</nav>
 
 	<div class="BannerPrincipal">
@@ -33,18 +34,20 @@
 
 	<div class="BannerPrincipalCategories">
 		<p>View by category:</p>
-		<h4>Appetizers</h4>
-		<h4>Beverages</h4>
-		<h4>Desserts</h4>
-		<h4>Healthy</h4>
+		<div class="BannerPrincipalCategoriesCategories">
+			<h4>Appetizers</h4>
+			<h4>Beverages</h4>
+			<h4>Desserts</h4>
+			<h4>Healthy</h4>
+		</div>
 	</div>
 
 	<section class="SeccioLatestRecipes"> 
-		<h2>Latest recipes</h2>
+		<h2 class="MargeTitols">Latest recipes</h2>
 		<div class="DivLatestRecipes">
 			
 			<div class="DivLatestRecipes2">
-				<img src="Pictures/IMG2.webp" alt="Recepta1">
+				<img src="Pictures/IMG2.webp" alt="Recepta1" class="ImgFlexible">
 				<h3 class="DivLatestRecipesText">Grantma's Butterscotch</h3>
 				<h4 class="DivLatestRecipesText">Healthy</h4>
 				<p class="DivLatestRecipesText">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse feugiat viverra diam, ac tempus est faucibus in. Sed cursus ante vel fermentum malesuada. Fusce placerat interdum sem, id porttitor tellus semper vel. Pellentesque fringilla, vel nisi.</p>
@@ -52,7 +55,7 @@
 			</div>
 			
 			<div class="DivLatestRecipes3">
-				<img src="Pictures/IMG2.webp" alt="Recepta2">
+				<img src="Pictures/IMG2.webp" alt="Recepta2" class="ImgFlexible">
 				<h3 class="DivLatestRecipesText">10 Minute Magic Orange Sauce</h3>
 				<h4 class="DivLatestRecipesText">Healthy</h4>
 				<p class="DivLatestRecipesText">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse feugiat viverra diam, ac tempus est faucibus in. Sed cursus ante vel fermentum malesuada. Fusce placerat interdum sem, id porttitor tellus semper vel. Pellentesque fringilla, vel nisi.</p>
@@ -73,7 +76,7 @@
 	</div>
 
 	<section class="SeccioPopularRecipes">
-		<h2>Most popular recipes</h2>
+		<h2 class="MargeTitols">Most popular recipes</h2>
 		<div class="DivPopularRecipesCollage">
 			<div class="DivPopularRecipesImages">
 				<h4 class="PopularRecipesImagesText1">Healthy</h4>
@@ -105,7 +108,7 @@
 </body>
 
 <footer class="Footer">
-	<div>
+	<div class="DivFooterLogo">
 		<img src="Pictures/logoipsum.webp" alt="Logo">
 	</div>
 	<div class="DivFooterPrincipal">

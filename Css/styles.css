@@ -27,6 +27,7 @@ h4 {
 	align-items: center;
 	gap: 20px;
 	border-bottom: 2px solid black;
+	z-index: 10;
 }
 .FotoPerfilNavegacio {
 	margin-left: auto;
@@ -60,6 +61,12 @@ h4 {
 	gap: 25px;
 	align-items: center;
 	border-bottom: 2px solid black;
+	flex-wrap: wrap;
+}
+.BannerPrincipalCategoriesCategories {
+	display: flex;
+	gap: 25px;
+	flex-wrap: wrap;
 }
 
 /* TEXTES GENERALS */
@@ -102,6 +109,9 @@ h4 {
 	background-color: white;
 	padding: 4.1px;
 }
+.BotoMenuDesplegable {
+	display: none;
+}
 
 /* SECCIONS */
 
@@ -119,7 +129,7 @@ h4 {
 .SeccioAboutAuthor {
 	padding-left: 15%;
 	padding-right: 15%;
-	height: 350px;
+	min-height: 350px;
 	background-color: #DDBEA9;
 	display: flex;
 	justify-content: space-between;
@@ -223,6 +233,10 @@ h4 {
 	margin-top: 0px;
 	margin-bottom: 0px
 }
+.ImgFlexible {
+	max-width: 100%;
+	height: auto;
+}
 
 /* FOOTER */
 
@@ -235,3 +249,118 @@ h4 {
 
 /* MEDIAQUERIES */
 
+@media (max-width: 1465px) {
+	/* Centrar les imatges a la pantalla */
+	.DivLatestRecipes {
+		align-items: center;
+		justify-content: center;
+	}
+	/* Canviar distribucio de categories */
+	.BannerPrincipalCategories {
+		justify-content: center;
+		align-items: center;
+		margin-bottom: 0px;
+	}
+	.BannerPrincipalCategoriesCategories {
+		justify-content: space-evenly;
+		align-items: center;
+		margin-top: 0px;
+		margin-bottom: 0px;
+	}
+	/* Canviar distribucio del formulari */
+	.DivFormulari {
+		flex-direction: column;
+	}
+	/* Canviar distribucio del about the author */
+	.SeccioAboutAuthor {
+		flex-direction: column;
+		height: 10%;
+		gap: 20px;
+		justify-content: center;
+		padding-top: 40px;
+		padding-bottom: 40px;
+	}
+	/* Canviar distribucio del footer */
+	.DivFooterLogo {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		margin-bottom: 15px;
+	}
+	.DivFooterPrincipal {
+		flex-direction: column;
+	}
+	.DivFooterNavegacio {
+		flex-direction: column;
+		margin-bottom: 30px;
+	}
+	.DivFooterXarxes {
+		justify-content: center;
+	}
+	/* Amagar botos de navegacio */
+	.BotoMenuDesplegable {
+		display: block;
+		margin-left: auto;
+		border: 0px solid;
+		border-radius: 180px;
+	}
+	.Visibilitat {
+		display: none;
+	}
+}
+@media (max-width: 710px) {
+	.SeccioPopularRecipes {
+		padding-left: 0px;
+		padding-right: 0px;
+	}
+	.MargeTitols {
+		padding-left: 15%;
+	}
+	.DivPopularRecipesImages {
+		background-size: cover;
+		background-position: center;
+		background-repeat: no-repeat;
+		position: relative;
+		width: 100%;
+	}
+	.PopularRecipesImagesText1 {
+		position: absolute;
+		top: 70%;
+		left: 5%;
+		padding-top: 0;
+		padding-left: 0;
+	}
+	.PopularRecipesImagesText2 {
+		position: absolute;
+		top: 75%;
+		left: 5%;
+		padding-left: 0;
+	}
+	.DivFormulari {
+		margin-left: 5%;
+		margin-right: 5%;
+	}
+	.DivFormulariText {
+		width: 100%;
+	}
+	.DivBotoLlarg {
+		width: 100%;
+		padding: 4px;
+		padding-left: 3%;
+	}
+}
+@media (max-width: 499px) {
+	.BannerPrincipalPropietatsText {
+		padding-left: 5%;
+	}
+	.DivPopularRecipesImages {
+		background-size: contain;
+	}
+	.MargeTitols {
+		padding-left: 5%;
+	}
+	.SeccioLatestRecipes {
+		padding-left: 0;
+		padding-right: 0;
+}
+}
